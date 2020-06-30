@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+	<!-- MelgarBulletin -->
+
+	<bean id="meltin01" class="acme.entities.bulletins.MelgarBulletin">
+		<property name="author" value="Peter Parker" />
+		<property name="text" value="Siento un cosquilleo." />
+		<property name="moment" value="2019/09/16 22:45" />
+	</bean>
+
+	<bean id="meltin02" class="acme.entities.bulletins.MelgarBulletin">
+		<property name="author" value="Rubeus Hagrid" />
+		<property name="text" value="El peluca sape." />
+		<property name="moment" value="2019/08/24 19:14" />
+	</bean>
+
+	<bean id="meltin03" class="acme.entities.bulletins.MelgarBulletin">
+		<property name="author" value="Bruno Diaz" />
+		<property name="text" value="Aloha!" />
+		<property name="moment" value="2019/09/17 16:30" />
+	</bean>
+
+	<!-- MinuesaBulletin -->
+
+	<bean id="mintin01" class="acme.entities.bulletins.MinuesaBulletin">
+		<property name="author" value="Joker" />
+		<property name="text" value="Put on a happy face" />
+		<property name="moment" value="2019/08/16 22:45" />
+	</bean>
+
+	<bean id="mintin02" class="acme.entities.bulletins.MinuesaBulletin">
+		<property name="author" value="Hulk" />
+		<property name="text" value="Quiero aplastar" />
+		<property name="moment" value="2019/06/24 19:14" />
+	</bean>
+
+	<bean id="mintin03" class="acme.entities.bulletins.MinuesaBulletin">
+		<property name="author" value="Tony Stark" />
+		<property name="text" value="Te quiero 3000" />
+		<property name="moment" value="2019/07/17 16:30" />
+	</bean>
+
+</beans>

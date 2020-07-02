@@ -26,6 +26,13 @@ master.menu.sign-up = Sign up
 master.menu.sign-in = Sign in
 master.menu.sign-out = Sign out
 
+master.menu.notices.list = Notices
+master.menu.technologyRecords.list = Technology Records
+master.menu.toolRecords.list = Tool Records
+master.menu.inquires.list = Inquires
+master.menu.overtures.list = Overtures
+master.menu.challenges.list = Challenges
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
@@ -40,7 +47,9 @@ master.menu.bulletin.dos = MinuesaBulletin
 master.menu.bulletin.dos.minuesaBulletin.list = Minuesa's Bulletin
 master.menu.bulletin.dos.minuesaBulletin.form = Shout to Minuesa!
 
-master.menu.notices.list = Notices
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
 
 # master.menu.administrator ###################################################
 

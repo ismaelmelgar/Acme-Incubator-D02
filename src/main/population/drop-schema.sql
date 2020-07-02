@@ -35,9 +35,15 @@
 
     drop table if exists `minuesa_bulletin`;
 
+    drop table if exists `notice`;
+
+    drop table if exists `overture`;
+
     drop table if exists `provider`;
 
     drop table if exists `technology_record`;
+
+    drop table if exists `tool_record`;
 
     drop table if exists `user_account`;
 

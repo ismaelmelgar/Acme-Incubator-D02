@@ -49,9 +49,9 @@
 		<property name="text" value="Te quiero 3000" />
 		<property name="moment" value="2019/07/17 16:30" />
 	</bean>
-	
+
 	<!-- Inquiries -->
-	
+
 	<bean id="inquirie01" class="acme.entities.inquiries.Inquirie">
 		<property name="title" value="Inquirie number 1" />
 		<property name="creationMoment" value="2019/09/09 10:00" />
@@ -62,7 +62,7 @@
 		<property name="email" value="inquirie1@gmail.com" />
 	</bean>
 
-  <bean id="inquirie02" class="acme.entities.inquiries.Inquirie">
+	<bean id="inquirie02" class="acme.entities.inquiries.Inquirie">
 		<property name="title" value="Inquirie number 2" />
 		<property name="creationMoment" value="2019/09/09 10:00" />
 		<property name="deadline" value="2022/09/20 10:00" />
@@ -71,7 +71,7 @@
 		<property name="maxMoney" value="150.0€" />
 		<property name="email" value="inquirie2@gmail.com" />
 	</bean>
-	
+
 	<bean id="inquirie03" class="acme.entities.inquiries.Inquirie">
 		<property name="title" value="Inquirie number 3" />
 		<property name="creationMoment" value="2019/09/09 10:00" />
@@ -81,9 +81,9 @@
 		<property name="maxMoney" value="350.0€" />
 		<property name="email" value="inquirie3@gmail.com" />
 	</bean>
-	
+
 	<!-- Technology Records -->
-	
+
 	<bean id="technologyrecord01" class="acme.entities.technologyRecords.TechnologyRecord">
 		<property name="title" value="Technology Record number 1" />
 		<property name="sector" value="Technology" />
@@ -94,7 +94,7 @@
 		<property name="indication" value="true" />
 		<property name="star" value="5" />
 	</bean>
-	
+
 	<bean id="technologyrecord02" class="acme.entities.technologyRecords.TechnologyRecord">
 		<property name="title" value="Technology Record number 2" />
 		<property name="sector" value="Business" />
@@ -103,9 +103,11 @@
 		<property name="web" value="http://www.example.com" />
 		<property name="email" value="technologyrecord2@gmail.com" />
 		<property name="indication" value="true" />
-		<property name="star"><null /></property>
+		<property name="star">
+			<null />
+		</property>
 	</bean>
-	
+
 	<bean id="technologyrecord03" class="acme.entities.technologyRecords.TechnologyRecord">
 		<property name="title" value="Technology Record number 3" />
 		<property name="sector" value="Health" />
@@ -116,9 +118,9 @@
 		<property name="indication" value="false" />
 		<property name="star" value="-5" />
 	</bean>
-	
+
 	<!-- Challenges -->
-	
+
 	<bean id="challenge01" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Challenge number 1" />
 		<property name="deadline" value="2022/05/20 10:00" />
@@ -130,7 +132,7 @@
 		<property name="expertGoal" value="Expert challenge 1" />
 		<property name="expertReward" value="300.0€" />
 	</bean>
-	
+
 	<bean id="challenge02" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Challenge number 2" />
 		<property name="deadline" value="2022/07/20 10:00" />
@@ -142,7 +144,7 @@
 		<property name="expertGoal" value="Expert challenge 2" />
 		<property name="expertReward" value="200.0€" />
 	</bean>
-	
+
 	<bean id="challenge03" class="acme.entities.challenges.Challenge">
 		<property name="title" value="Challenge number 3" />
 		<property name="deadline" value="2022/01/20 10:00" />
@@ -155,7 +157,7 @@
 		<property name="expertReward" value="350.0€" />
 	</bean>
 
-<!-- Notices -->
+	<!-- Notices -->
 
 	<bean id="notice01" class="acme.entities.notices.Notice">
 		<property name="header"
@@ -188,5 +190,73 @@
 		<property name="link"
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
 	</bean>
+	
+	<bean id="notice04" class="acme.entities.notices.Notice">
+		<property name="header" value="https://estaticos.sport.es/resources/jpg/1/5/bartra-pelea-por-balon-1541617108951.jpg" />
+		<property name="title" value="Expired notice" />
+		<property name="creation" value="2018/11/07 12:24" />
+		<property name="deadline" value="2019/11/12 14:00" />
+		<property name="body"
+			value="El entrenador del Betis declaró que estar en el Betis tras jugar en el Dortmund y el Barça no es un buen síntoma para el defensa." />
+		<property name="link"
+			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
+	</bean>
 
+	<!-- Overtures -->
+	
+	<bean id="overture01" class="acme.entities.overtures.Overture">
+		<property name="title" value="Propuesta 1" />
+		<property name="creation" value="2020/07/02 12:45" />
+		<property name="deadline" value="2020/12/31 23:59" />
+		<property name="description" value="Ejemplo numero 1." />
+		<property name="maxMoney" value="950.0€" />
+		<property name="minMoney" value="400.0€" />
+		<property name="email" value="test1@mail.com" />
+	</bean>
+
+	<bean id="overture02" class="acme.entities.overtures.Overture">
+		<property name="title" value="Propuesta 2" />
+		<property name="creation" value="2020/06/11 21:15" />
+		<property name="deadline" value="2022/11/30 06:00" />
+		<property name="description" value="Ejemplo numero 2." />
+		<property name="maxMoney" value="1200.0€" />
+		<property name="minMoney" value="600.0€" />
+		<property name="email" value="test2@mail.com" />
+	</bean>
+
+<!-- Tool Records -->
+	
+<bean name="toolrecord01" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="TR Example 1" />
+		<property name="activitySector" value="Software" />
+		<property name="inventor" value="Ismael Melgar" />
+		<property name="description" value="Ejemplo numero 1." />
+		<property name="web" value="https://twitter.com/RealBetis" />
+		<property name="email" value="ismmelfer@alum.us.es" />
+		<property name="sourceType" value="Open-source" />
+		<property name="stars" value="3" />
+	</bean>
+
+	<bean name="toolrecord02" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="TR Example 2" />
+		<property name="activitySector" value="Industrial" />
+		<property name="inventor" value="Jose Manuel Minuesa Reyes" />
+		<property name="description" value="Ejemplo numero 2." />
+		<property name="web" value="https://twitter.com/SevillaFC/" />
+		<property name="email" value="josminrey@alum.us.es" />
+		<property name="sourceType" value="Open-source" />
+		<property name="stars" value="5" />
+	</bean>
+
+	<bean name="toolrecord03" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="TR Example 3" />
+		<property name="activitySector" value="Economics" />
+		<property name="inventor" value="Pepe Matega" />
+		<property name="description" value="Ejemplo numero 3." />
+		<property name="web" value="https://pepematega.com" />
+		<property name="email" value="pepematega@correo.com" />
+		<property name="sourceType" value="Closed-source" />
+		<property name="stars" value="-4" />
+	</bean>
+	
 </beans>

@@ -25,15 +25,19 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `challenge`;
+
     drop table if exists `consumer`;
+
+    drop table if exists `inquirie`;
 
     drop table if exists `melgar_bulletin`;
 
     drop table if exists `minuesa_bulletin`;
 
-    drop table if exists `notice`;
-
     drop table if exists `provider`;
+
+    drop table if exists `technology_record`;
 
     drop table if exists `user_account`;
 

@@ -41,12 +41,14 @@ master.menu.bulletin.dos.minuesaBulletin.list = Minuesa's Bulletin
 master.menu.bulletin.dos.minuesaBulletin.form = Shout to Minuesa!
 
 master.menu.notices.list = Notices
+master.menu.technologyRecords.list = Technology Records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.customisation.list = Configuration
 
 # master.menu.provider ########################################################
 

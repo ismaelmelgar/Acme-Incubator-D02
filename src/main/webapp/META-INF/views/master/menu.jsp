@@ -32,6 +32,9 @@
 			<!--  Notices -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.notices.list" action="/anonymous/notice/list" />
+			<!--  Technology Records -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.technologyRecords.list" action="/anonymous/technologyRecord/list" />
 		</acme:menu-option>
 
 		<%--------------------Administrator--------------------%>
@@ -39,6 +42,9 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
+			<!--  Customisation -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.customisation.list" action="/administrator/customisation/list" />
 		</acme:menu-option>
 
 		<%--------------------Provider--------------------%>

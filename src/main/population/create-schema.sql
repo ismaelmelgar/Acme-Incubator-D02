@@ -1,5 +1,5 @@
 
-create table `administrator` (
+    create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -47,6 +47,15 @@ create table `administrator` (
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `customisation` (
+       `id` integer not null,
+        `version` integer not null,
+        `activiy_sectors` varchar(255),
+        `spam_words` varchar(255),
+        `threshold` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `inquirie` (
        `id` integer not null,
         `version` integer not null,
@@ -77,6 +86,18 @@ create table `administrator` (
         `author` varchar(255),
         `moment` datetime(6),
         `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `header` varchar(255),
+        `link` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

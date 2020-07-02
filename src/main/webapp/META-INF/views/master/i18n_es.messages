@@ -41,12 +41,14 @@ master.menu.bulletin.dos.minuesaBulletin.list = Bulletin de Minuesa
 master.menu.bulletin.dos.minuesaBulletin.form = ¡Grita a Minuesa!
 
 master.menu.notices.list = Avisos
+master.menu.technologyRecords.list = Registro de Tecnologias
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.customisation.list = Configuracion
 
 # master.menu.provider ########################################################
 

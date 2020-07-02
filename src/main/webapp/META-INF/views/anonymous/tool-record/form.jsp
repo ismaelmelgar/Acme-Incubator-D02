@@ -16,12 +16,14 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-textbox code="anonymous.notice.label.header" path="header"/>
-	<acme:form-textbox code="anonymous.notice.label.title" path="title"/>
-	<acme:form-textbox code="anonymous.notice.label.creation" path="creation"/>
-	<acme:form-textbox code="anonymous.notice.label.deadline" path="deadline"/>
-	<acme:form-textarea code="anonymous.notice.label.body" path="body"/>
-	<acme:form-url code="anonymous.notice.label.link" path="link"/>
+	<acme:form-textbox code="anonymous.tool-record.label.title" path="title"/>
+	<acme:form-textbox code="anonymous.tool-record.label.activitySector" path="activitySector"/>
+	<acme:form-textbox code="anonymous.tool-record.label.inventor" path="inventor"/>
+	<acme:form-textbox code="anonymous.tool-record.label.description" path="description"/>
+	<acme:form-textbox code="anonymous.tool-record.label.web" path="web"/>
+	<acme:form-textbox code="anonymous.tool-record.label.email" path="email"/>
+	<acme:form-textbox code="anonymous.tool-record.label.sourceType" path="sourceType"/>
+	<acme:form-textbox code="anonymous.tool-record.label.stars" path="stars"/>
 
   	<acme:form-return code="anonymous.notice.form.button.return"/>
 </acme:form>

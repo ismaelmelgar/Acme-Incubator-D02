@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.notices;
+package acme.features.authenticated.toolRecords;
 
 import javax.annotation.PostConstruct;
 
@@ -7,21 +7,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.notices.Notice;
+import acme.entities.toolRecords.ToolRecord;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/anonymous/notice/")
-public class AnonymousNoticeController extends AbstractController<Anonymous, Notice> {
+@RequestMapping("/authenticated/tool-record/")
+public class AuthenticatedToolRecordController extends AbstractController<Authenticated, ToolRecord> {
 
 	// Internal state ------------------------------------------------
 	@Autowired
-	private AnonymousNoticeListService	listService;
+	private AuthenticatedToolRecordListService	listService;
 
 	@Autowired
-	private AnonymousNoticeShowService	showService;
+	private AuthenticatedToolRecordShowService	showService;
 
 
 	// Constructors --------------------------------------------------

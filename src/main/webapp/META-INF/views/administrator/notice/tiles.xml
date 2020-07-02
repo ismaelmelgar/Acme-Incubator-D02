@@ -18,8 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/minuesa-bulletin/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/minuesaBulletin/list.jsp" />
+	<definition name="administrator/notice/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/notice/form.jsp" />
+	</definition>	
+
+	<definition name="administrator/notice/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/notice/list.jsp" />
 	</definition>
 
 </tiles-definitions>

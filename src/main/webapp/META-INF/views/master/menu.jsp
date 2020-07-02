@@ -20,8 +20,8 @@
 	<acme:menu-left>
 		<%--------------------Anonymous--------------------%>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link.melgar" action="https://www.youtube.com"/>
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link.minuesa" action="https://www.hobbyconsolas.com"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.melgar" action="https://www.youtube.com" />
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link.minuesa" action="https://www.hobbyconsolas.com" />
 			<!--  Bulletins -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.bulletin.uno.melgarBulletin.list" action="/anonymous/melgarBulletin/list" />
@@ -29,20 +29,23 @@
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.bulletin.dos.minuesaBulletin.list" action="/anonymous/minuesaBulletin/list" />
 			<acme:menu-suboption code="master.menu.bulletin.dos.minuesaBulletin.form" action="/anonymous/minuesaBulletin/create" />
+			<!--  Notices -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.notices.list" action="/anonymous/notice/list" />
 		</acme:menu-option>
-		
+
 		<%--------------------Administrator--------------------%>
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 		</acme:menu-option>
-		
+
 		<%--------------------Provider--------------------%>
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/" />
 		</acme:menu-option>
-		
+
 		<%--------------------Consumer--------------------%>
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/" />

@@ -40,6 +40,7 @@ master.menu.bulletin.dos = MinuesaBulletin
 master.menu.bulletin.dos.minuesaBulletin.list = Bulletin de Minuesa
 master.menu.bulletin.dos.minuesaBulletin.form = ¡Grita a Minuesa!
 
+master.menu.notices.list = Avisos
 
 # master.menu.administrator ###################################################
 

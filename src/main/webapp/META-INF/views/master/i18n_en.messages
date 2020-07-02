@@ -40,6 +40,7 @@ master.menu.bulletin.dos = MinuesaBulletin
 master.menu.bulletin.dos.minuesaBulletin.list = Minuesa's Bulletin
 master.menu.bulletin.dos.minuesaBulletin.form = Shout to Minuesa!
 
+master.menu.notices.list = Notices
 
 # master.menu.administrator ###################################################
 

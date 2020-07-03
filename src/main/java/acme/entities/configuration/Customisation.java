@@ -2,9 +2,9 @@
 package acme.entities.configuration;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
@@ -22,14 +22,14 @@ public class Customisation extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@NotBlank
+	@Length(min = 1, max = 100)
 	private String				spamWords;
 
 	@Range(min = 0, max = 100)
 	@NotNull
 	private Double				threshold;
 
-	@NotBlank
+	@Length(min = 1, max = 100)
 	private String				activiySectors;
 
 }

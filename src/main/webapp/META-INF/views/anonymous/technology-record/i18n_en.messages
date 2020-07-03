@@ -14,7 +14,7 @@ anonymous.technologyRecord.label.inventor = Inventor
 anonymous.technologyRecord.label.description = Description
 anonymous.technologyRecord.label.web = Web
 anonymous.technologyRecord.label.email = Email
-anonymous.technologyRecord.label.indication = Indication
+anonymous.technologyRecord.label.indication = Source Type
 anonymous.technologyRecord.label.star = Stars
 
 anonymous.technologyRecord.form.button.return = Return

@@ -3,14 +3,16 @@ package acme.entities.overtures;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.Length;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -28,7 +30,7 @@ public class Overture extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -40,7 +42,8 @@ public class Overture extends DomainEntity {
 	@NotNull
 	private Date				deadline;
 
-	@NotBlank
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
 	private String				description;
 
 	@Valid
@@ -52,7 +55,7 @@ public class Overture extends DomainEntity {
 	private Money				minMoney;
 
 	@Email
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				email;
 
 }

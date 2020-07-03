@@ -14,7 +14,7 @@ authenticated.technologyRecord.label.inventor = Inventor
 authenticated.technologyRecord.label.description = Descripcion
 authenticated.technologyRecord.label.web = Web
 authenticated.technologyRecord.label.email = Email
-authenticated.technologyRecord.label.indication = Indicacion
+authenticated.technologyRecord.label.indication = Modelo
 authenticated.technologyRecord.label.star = Estrellas
 
 authenticated.technologyRecord.form.button.return = Volver

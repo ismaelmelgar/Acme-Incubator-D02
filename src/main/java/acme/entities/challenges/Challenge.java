@@ -3,12 +3,14 @@ package acme.entities.challenges;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -26,31 +28,32 @@ public class Challenge extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
 	private Date				deadline;
 
-	@NotBlank
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
 	private String				description;
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				rookieGoal;
 
 	@Valid
 	@NotNull
 	private Money				rookieReward;
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				averageGoal;
 
 	@Valid
 	@NotNull
 	private Money				averageReward;
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				expertGoal;
 
 	@Valid

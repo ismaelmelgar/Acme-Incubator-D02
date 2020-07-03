@@ -21,5 +21,10 @@
 	<definition name="anonymous/melgar-bulletin/list" extends="master">
 		<put-attribute name="body" type="template" value="../anonymous/melgarBulletin/list.jsp" />
 	</definition>
+	
+	<definition name="anonymous/melgar-bulletin/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/melgarBulletin/form.jsp" />
+	</definition>
+
 
 </tiles-definitions>

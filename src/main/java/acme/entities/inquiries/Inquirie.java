@@ -3,6 +3,7 @@ package acme.entities.inquiries;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -11,6 +12,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.Length;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -28,7 +31,7 @@ public class Inquirie extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -40,7 +43,8 @@ public class Inquirie extends DomainEntity {
 	@NotNull
 	private Date				deadline;
 
-	@NotBlank
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
 	private String				description;
 
 	@Valid

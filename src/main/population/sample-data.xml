@@ -190,8 +190,8 @@
 		<property name="link"
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
 	</bean>
-	
-  <bean id="notice04" class="acme.entities.notices.Notice">
+
+	<bean id="notice04" class="acme.entities.notices.Notice">
 		<property name="header" value="https://estaticos.sport.es/resources/jpg/1/5/bartra-pelea-por-balon-1541617108951.jpg" />
 		<property name="title" value="Expired notice" />
 		<property name="creation" value="2018/11/07 12:24" />
@@ -202,7 +202,7 @@
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
 	</bean>
 
-  <!-- Customisation -->
+	<!-- Customisation -->
 
 	<bean id="customisation" class="acme.entities.configuration.Customisation">
 		<property name="spamWords"
@@ -210,9 +210,10 @@
 		<property name="threshold" value="2.50" />
 		<property name="activiySectors"
 			value="Technology, Science, Arts, Business, Health, Tecnología, Ciencia, Artes, Negocios, Salud" />
+	</bean>
 
 	<!-- Overtures -->
-	
+
 	<bean id="overture01" class="acme.entities.overtures.Overture">
 		<property name="title" value="Propuesta 1" />
 		<property name="creation" value="2020/07/02 12:45" />
@@ -233,9 +234,9 @@
 		<property name="email" value="test2@mail.com" />
 	</bean>
 
-<!-- Tool Records -->
-	
-<bean name="toolrecord01" class="acme.entities.toolRecords.ToolRecord">
+	<!-- Tool Records -->
+
+	<bean name="toolrecord01" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="TR Example 1" />
 		<property name="activitySector" value="Software" />
 		<property name="inventor" value="Ismael Melgar" />
@@ -267,5 +268,5 @@
 		<property name="sourceType" value="Closed-source" />
 		<property name="stars" value="-4" />
 	</bean>
-	
+
 </beans>

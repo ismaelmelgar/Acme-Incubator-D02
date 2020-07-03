@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.technologyRecord;
+package acme.features.anonymous.technologyRecords;
 
 import javax.annotation.PostConstruct;
 
@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/technologyRecord/")
+@RequestMapping("/anonymous/technology-record/")
 public class AnonymousTechnologyRecordController extends AbstractController<Anonymous, TechnologyRecord> {
 
 	// Internal state ------------------------------------------------
@@ -24,8 +24,8 @@ public class AnonymousTechnologyRecordController extends AbstractController<Anon
 	@Autowired
 	private AnonymousTechnologyRecordShowService	showService;
 
-
 	// Constructors --------------------------------------------------
+
 
 	@PostConstruct
 	private void initialise() {

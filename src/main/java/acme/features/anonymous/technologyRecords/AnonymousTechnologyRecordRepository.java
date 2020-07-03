@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.technologyRecord;
+package acme.features.anonymous.technologyRecords;
 
 import java.util.Collection;
 

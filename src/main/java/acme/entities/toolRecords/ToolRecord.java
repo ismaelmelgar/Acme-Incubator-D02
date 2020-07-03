@@ -36,8 +36,8 @@ public class ToolRecord extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@URL
 	@NotBlank
+	@URL
 	private String				web;
 
 	@NotBlank

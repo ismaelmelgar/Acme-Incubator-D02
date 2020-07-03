@@ -54,7 +54,7 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<!--  Inquires -->
-			<acme:menu-suboption code="master.menu.inquires.list" action="/authenticated/inquire/list" />
+			<acme:menu-suboption code="master.menu.inquiries.list" action="/authenticated/inquirie/list" />
 			<!--  Overtures -->
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.overtures.list" action="/authenticated/overture/list" />

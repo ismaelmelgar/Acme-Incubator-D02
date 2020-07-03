@@ -29,7 +29,7 @@ master.menu.sign-out = Salir
 master.menu.notices.list = Notices
 master.menu.technologyRecords.list = Registros tecnologicos
 master.menu.toolRecords.list = Registros de herramientas
-master.menu.inquires.list = Consultas
+master.menu.inquiries.list = Consultas
 master.menu.overtures.list = Propuestas
 master.menu.challenges.list = Retos
 

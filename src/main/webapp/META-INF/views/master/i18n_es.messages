@@ -26,8 +26,8 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
-master.menu.notices.list = Notices
-master.menu.technologyRecords.list = Registros tecnologicos
+master.menu.notices.list = Avisos
+master.menu.technologyRecords.list = Registro de Tecnologias
 master.menu.toolRecords.list = Registros de herramientas
 master.menu.inquiries.list = Consultas
 master.menu.overtures.list = Propuestas
@@ -47,6 +47,7 @@ master.menu.bulletin.dos = MinuesaBulletin
 master.menu.bulletin.dos.minuesaBulletin.list = Bulletin de Minuesa
 master.menu.bulletin.dos.minuesaBulletin.form = ¡Grita a Minuesa!
 
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
@@ -56,6 +57,7 @@ master.menu.authenticated = Autenticado
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.customisation.list = Configuracion
 
 # master.menu.provider ########################################################
 

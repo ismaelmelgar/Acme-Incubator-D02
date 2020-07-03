@@ -191,7 +191,7 @@
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
 	</bean>
 	
-	<bean id="notice04" class="acme.entities.notices.Notice">
+  <bean id="notice04" class="acme.entities.notices.Notice">
 		<property name="header" value="https://estaticos.sport.es/resources/jpg/1/5/bartra-pelea-por-balon-1541617108951.jpg" />
 		<property name="title" value="Expired notice" />
 		<property name="creation" value="2018/11/07 12:24" />
@@ -201,6 +201,15 @@
 		<property name="link"
 			value="https://www.sport.es/es/noticias/laliga/dardo-setien-bartra-algo-estaras-haciendo-bien-para-estar-betis-7134635" />
 	</bean>
+
+  <!-- Customisation -->
+
+	<bean id="customisation" class="acme.entities.configuration.Customisation">
+		<property name="spamWords"
+			value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar, sexo, duro, has ganado, un millon de dolares" />
+		<property name="threshold" value="2.50" />
+		<property name="activiySectors"
+			value="Technology, Science, Arts, Business, Health, Tecnología, Ciencia, Artes, Negocios, Salud" />
 
 	<!-- Overtures -->
 	

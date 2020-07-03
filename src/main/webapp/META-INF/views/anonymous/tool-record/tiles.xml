@@ -18,8 +18,13 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/minuesa-bulletin/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/minuesaBulletin/list.jsp" />
+	<definition name="anonymous/tool-record/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/tool-record/form.jsp" />
+	</definition>	
+
+	<definition name="anonymous/tool-record/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/tool-record/list.jsp" />
 	</definition>
+
 
 </tiles-definitions>

@@ -18,8 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/minuesa-bulletin/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/minuesaBulletin/list.jsp" />
+	<definition name="authenticated/overture/form" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/overture/form.jsp" />	
+		</definition>
+	
+<definition name="authenticated/overture/list" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/overture/list.jsp" />
 	</definition>
 
 </tiles-definitions>

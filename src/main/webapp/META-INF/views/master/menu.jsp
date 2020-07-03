@@ -34,12 +34,40 @@
 			<acme:menu-suboption code="master.menu.notices.list" action="/anonymous/notice/list" />
 			<!--  Technology Records -->
 			<acme:menu-separator />
-			<acme:menu-suboption code="master.menu.technologyRecords.list" action="/anonymous/technologyRecord/list" />
+			<acme:menu-suboption code="master.menu.technologyRecords.list" action="/anonymous/technology-record/list" />
+			<!--  Tool Records -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.toolRecords.list" action="/anonymous/tool-record/list" />
 		</acme:menu-option>
 
+		<%--------------------Authenticated--------------------%>
+		<acme:menu-option code="master.menu.anonymous" access="isAuthenticated()">
+			<!--  Notices -->
+			<acme:menu-suboption code="master.menu.notices.list" action="/authenticated/notice/list" />
+			<!--  Technology Records -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.technologyRecords.list" action="/authenticated/technology-record/list" />
+			<!--  Tool Records -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.toolRecords.list" action="/authenticated/tool-record/list" />
+		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<!--  Inquires -->
+			<acme:menu-suboption code="master.menu.inquires.list" action="/authenticated/inquire/list" />
+			<!--  Overtures -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.overtures.list" action="/authenticated/overture/list" />
+			<!--  Challenges -->
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.challenges.list" action="/authenticated/challenge/list" />
+		</acme:menu-option>
+		
 		<%--------------------Administrator--------------------%>
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.notices.list" action="/administrator/notice/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 			<!--  Customisation -->

@@ -29,8 +29,6 @@
 
     drop table if exists `consumer`;
 
-    drop table if exists `customisation`;
-
     drop table if exists `inquirie`;
 
     drop table if exists `melgar_bulletin`;
@@ -39,9 +37,13 @@
 
     drop table if exists `notice`;
 
+    drop table if exists `overture`;
+
     drop table if exists `provider`;
 
     drop table if exists `technology_record`;
+
+    drop table if exists `tool_record`;
 
     drop table if exists `user_account`;
 

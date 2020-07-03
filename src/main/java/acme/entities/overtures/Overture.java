@@ -1,17 +1,18 @@
 
-package acme.entities.notices;
+package acme.entities.overtures;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.Valid;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
-import org.hibernate.validator.constraints.URL;
-
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,16 +20,13 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Notice extends DomainEntity {
+public class Overture extends DomainEntity {
 
 	//Serialisation identifier ---------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
 
 	//Attributes -----------------------------------------------------
-	@NotBlank
-	@URL
-	private String				header;
 
 	@NotBlank
 	private String				title;
@@ -39,13 +37,22 @@ public class Notice extends DomainEntity {
 	private Date				creation;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	//@Future
+	@NotNull
 	private Date				deadline;
 
 	@NotBlank
-	private String				body;
+	private String				description;
 
+	@Valid
+	@NotNull
+	private Money				maxMoney;
+
+	@Valid
+	@NotNull
+	private Money				minMoney;
+
+	@Email
 	@NotBlank
-	private String				link;
+	private String				email;
 
 }

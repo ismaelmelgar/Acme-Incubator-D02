@@ -1,4 +1,3 @@
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -47,15 +46,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `customisation` (
-       `id` integer not null,
-        `version` integer not null,
-        `activiy_sectors` varchar(255),
-        `spam_words` varchar(255),
-        `threshold` double precision,
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `inquirie` (
        `id` integer not null,
         `version` integer not null,
@@ -101,6 +91,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -119,6 +124,20 @@
         `inventor` varchar(255),
         `sector` varchar(255),
         `star` integer,
+        `title` varchar(255),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `inventor` varchar(255),
+        `source_type` varchar(255),
+        `stars` integer,
         `title` varchar(255),
         `web` varchar(255),
         primary key (`id`)

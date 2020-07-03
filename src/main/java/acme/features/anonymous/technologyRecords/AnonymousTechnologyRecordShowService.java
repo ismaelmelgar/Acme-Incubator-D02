@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.technologyRecord;
+package acme.features.anonymous.technologyRecords;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

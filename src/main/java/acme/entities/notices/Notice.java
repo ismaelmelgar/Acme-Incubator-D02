@@ -39,7 +39,6 @@ public class Notice extends DomainEntity {
 	private Date				creation;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	//@Future
 	private Date				deadline;
 
 	@NotBlank

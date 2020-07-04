@@ -20,7 +20,7 @@
 	<acme:form-textbox code="anonymous.technologyRecord.label.title" path="title"/>
 	<acme:form-textbox code="anonymous.technologyRecord.label.sector" path="sector"/>
 	<acme:form-textbox code="anonymous.technologyRecord.label.inventor" path="inventor"/>
-	<acme:form-textbox code="anonymous.technologyRecord.label.description" path="description"/>
+	<acme:form-textarea code="anonymous.technologyRecord.label.description" path="description"/>
 	<acme:form-textbox code="anonymous.technologyRecord.label.web" path="web"/>
 	<acme:form-textbox code="anonymous.technologyRecord.label.email" path="email"/>
 	<acme:form-textbox code="anonymous.technologyRecord.label.indication" path="indication"/>

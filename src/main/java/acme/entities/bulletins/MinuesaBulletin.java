@@ -3,11 +3,13 @@ package acme.entities.bulletins;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.Length;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -24,10 +26,11 @@ public class MinuesaBulletin extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				author;
 
-	@NotBlank
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
 	private String				text;
 
 	@Temporal(TemporalType.TIMESTAMP)

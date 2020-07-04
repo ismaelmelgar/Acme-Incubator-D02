@@ -21,5 +21,9 @@
 	<definition name="anonymous/minuesa-bulletin/list" extends="master">
 		<put-attribute name="body" type="template" value="../anonymous/minuesaBulletin/list.jsp" />
 	</definition>
+	
+	<definition name="anonymous/minuesa-bulletin/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/minuesaBulletin/form.jsp" />
+	</definition>
 
 </tiles-definitions>

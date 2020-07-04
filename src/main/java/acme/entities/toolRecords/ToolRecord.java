@@ -4,7 +4,7 @@ package acme.entities.toolRecords;
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
@@ -44,9 +44,8 @@ public class ToolRecord extends DomainEntity {
 	@Email
 	private String				email;
 
-	@NotBlank
-	@Pattern(regexp = "^(Open-source|Closed-source)$")
-	private String				sourceType;
+	@NotNull
+	private Boolean				sourceType;
 
 	@Range(min = -5, max = 5)
 	private Integer				stars;

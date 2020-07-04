@@ -19,7 +19,7 @@
 	<acme:form-textbox code="authenticated.inquirie.label.title" path="title"/>
 	<acme:form-textbox code="authenticated.inquirie.label.creationMoment" path="creationMoment"/>
 	<acme:form-textbox code="authenticated.inquirie.label.deadline" path="deadline"/>
-	<acme:form-textbox code="authenticated.inquirie.label.description" path="description"/>
+	<acme:form-textarea code="authenticated.inquirie.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.inquirie.label.minMoney" path="minMoney"/>
 	<acme:form-textbox code="authenticated.inquirie.label.maxMoney" path="maxMoney"/>
 	<acme:form-textbox code="authenticated.inquirie.label.email" path="email"/>

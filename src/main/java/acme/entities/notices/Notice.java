@@ -3,13 +3,14 @@ package acme.entities.notices;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
@@ -26,11 +27,11 @@ public class Notice extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	//Attributes -----------------------------------------------------
-	@NotBlank
+	@Length(min = 1, max = 200)
 	@URL
 	private String				header;
 
-	@NotBlank
+	@Length(min = 1, max = 50)
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -41,10 +42,11 @@ public class Notice extends DomainEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 
-	@NotBlank
+	@Column(length = 500)
+	@Length(min = 1, max = 500)
 	private String				body;
 
-	@NotBlank
+	@Length(min = 1, max = 200)
 	private String				link;
 
 }

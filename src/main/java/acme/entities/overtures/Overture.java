@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
@@ -31,6 +32,7 @@ public class Overture extends DomainEntity {
 	//Attributes -----------------------------------------------------
 
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -44,6 +46,7 @@ public class Overture extends DomainEntity {
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				description;
 
 	@Valid
@@ -56,6 +59,7 @@ public class Overture extends DomainEntity {
 
 	@Email
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				email;
 
 }

@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
@@ -29,9 +30,11 @@ public class Notice extends DomainEntity {
 	//Attributes -----------------------------------------------------
 	@Length(min = 1, max = 200)
 	@URL
+	@NotBlank
 	private String				header;
 
 	@Length(min = 1, max = 50)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -40,10 +43,12 @@ public class Notice extends DomainEntity {
 	private Date				creation;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date				deadline;
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				body;
 
 	@Length(min = 1, max = 200)

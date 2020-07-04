@@ -8,13 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.technologyRecord.label.title = Title
-authenticated.technologyRecord.label.sector = Sector
-authenticated.technologyRecord.label.inventor = Inventor
-authenticated.technologyRecord.label.description = Description
-authenticated.technologyRecord.label.web = Web
-authenticated.technologyRecord.label.email = Email
-authenticated.technologyRecord.label.indication = Source Type
-authenticated.technologyRecord.label.star = Stars
+authenticated.technologyRecord.label.title = Title:
+authenticated.technologyRecord.label.sector = Activity sector:
+authenticated.technologyRecord.label.inventor = Inventor:
+authenticated.technologyRecord.label.description = Description:
+authenticated.technologyRecord.label.web = WebSite:
+authenticated.technologyRecord.label.email = Email:
+authenticated.technologyRecord.label.indication = Source Type:
+authenticated.technologyRecord.label.star = Rating:
 
 authenticated.technologyRecord.form.button.return = Return

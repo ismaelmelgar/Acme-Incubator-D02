@@ -39,21 +39,21 @@ public class Challenge extends DomainEntity {
 	@Length(min = 1, max = 500)
 	private String				description;
 
-	@Length(min = 1, max = 50)
+	@Length(min = 1, max = 200)
 	private String				rookieGoal;
 
 	@Valid
 	@NotNull
 	private Money				rookieReward;
 
-	@Length(min = 1, max = 50)
+	@Length(min = 1, max = 200)
 	private String				averageGoal;
 
 	@Valid
 	@NotNull
 	private Money				averageReward;
 
-	@Length(min = 1, max = 50)
+	@Length(min = 1, max = 200)
 	private String				expertGoal;
 
 	@Valid

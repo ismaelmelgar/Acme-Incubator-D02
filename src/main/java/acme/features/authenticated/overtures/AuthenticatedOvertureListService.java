@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.overtures;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,7 +47,10 @@ public class AuthenticatedOvertureListService implements AbstractListService<Aut
 
 		Collection<Overture> result;
 
-		result = this.repository.findMany();
+		Calendar cal = new GregorianCalendar();
+		Date time = cal.getTime();
+
+		result = this.repository.findMany(time);
 
 		return result;
 	}

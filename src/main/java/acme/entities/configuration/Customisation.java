@@ -22,14 +22,14 @@ public class Customisation extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@Length(min = 1, max = 100)
+	@Length(min = 1, max = 200)
 	private String				spamWords;
 
 	@Range(min = 0, max = 100)
 	@NotNull
 	private Double				threshold;
 
-	@Length(min = 1, max = 100)
+	@Length(min = 1, max = 200)
 	private String				activiySectors;
 
 }

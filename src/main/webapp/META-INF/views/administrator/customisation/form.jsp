@@ -1,6 +1,5 @@
-
 <%--
-- list.jsp
+- form.jsp
 -
 - Copyright (c) 2019 Rafael Corchuelo.
 -
@@ -16,10 +15,11 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:list>
-	<acme:list-column code="administrator.customisation.label.spamWords" path="spamWords" width="40%"/>
-	<acme:list-column code="administrator.customisation.label.threshold" path="threshold" width="40%"/><br>
-	<acme:list-column code="administrator.customisation.label.activitySectors" path="activitySectors" width="20%"/>		
-</acme:list>
+<acme:form readonly="true">
+	<acme:form-textbox code="administrator.customisation.label.spamWords" path="spamWords"/>
+	<acme:form-textbox code="administrator.customisation.label.threshold" path="threshold"/>
+	<acme:form-textbox code="administrator.customisation.label.activitySectors" path="activitySectors"/>
 
 
+  	<acme:form-return code="administrator.customisation.button.return"/>
+</acme:form>

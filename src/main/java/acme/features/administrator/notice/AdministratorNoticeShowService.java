@@ -19,6 +19,7 @@ public class AdministratorNoticeShowService implements AbstractShowService<Admin
 
 
 	// AbstractListService<Administrator, Notice> interface ------------------------------
+
 	@Override
 	public boolean authorise(final Request<Notice> request) {
 		assert request != null;

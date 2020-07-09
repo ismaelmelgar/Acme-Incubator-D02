@@ -26,6 +26,7 @@ public class MinuesaBulletin extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
+	@Column(length = 50)
 	@Length(min = 1, max = 50)
 	private String				author;
 

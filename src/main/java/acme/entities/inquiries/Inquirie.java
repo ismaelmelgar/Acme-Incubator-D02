@@ -31,7 +31,9 @@ public class Inquirie extends DomainEntity {
 
 	//Attributes -----------------------------------------------------
 
-	@Length(min = 1, max = 50)
+	@Column(length = 100)
+	@Length(min = 1, max = 100)
+	@NotBlank
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -45,6 +47,7 @@ public class Inquirie extends DomainEntity {
 
 	@Column(length = 500)
 	@Length(min = 1, max = 500)
+	@NotBlank
 	private String				description;
 
 	@Valid
@@ -55,8 +58,10 @@ public class Inquirie extends DomainEntity {
 	@NotNull
 	private Money				maxMoney;
 
-	@NotBlank
+	@Column(length = 50)
+	@Length(min = 1, max = 50)
 	@Email
+	@NotBlank
 	private String				email;
 
 }

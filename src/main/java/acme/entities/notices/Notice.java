@@ -55,9 +55,8 @@ public class Notice extends DomainEntity {
 	private String				body;
 
 	@Column(length = 200)
-	@Length(min = 1, max = 200)
+	@Length(max = 200)
 	@URL
-	@NotBlank
 	private String				link;
 
 }

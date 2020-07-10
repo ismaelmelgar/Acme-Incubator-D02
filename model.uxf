@@ -336,7 +336,7 @@ Notice
 + creation: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
 + deadline: Date {NotNull, Temporal(TemporalType.TIMESTAMP)}
 + body: String {NotBlank, Column(length = 500), Length(min = 1, max = 500)}
-+ link: String {NotBlank, URL, Column(length = 200),  Length(min = 1, max = 200)}
++ link: String {URL, Column(length = 200),  Length(max = 200)}
 
 bg=light_gray</panel_attributes>
     <additional_attributes/>
